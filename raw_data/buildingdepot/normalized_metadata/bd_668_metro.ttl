@@ -1,0 +1,26 @@
+@prefix bf: <http://buildsys.org/ontologies/BrickFrame#> .
+@prefix brick: <http://buildsys.org/ontologies/Brick#> .
+@prefix core: <http://metroinsight.io/schema/core#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix ws: <http://metroinsight.io/schema/workspace#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://metroinsight.io/schema/workspace#9fa6d76f-4563-4b68-9951-8e65b4c41067> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/668_0_3000013.csv"^^xsd:string ;
+            qudt:unit unit:Pounds-force-per-square-inch-BACNET ] ;
+    ssn:observes ws:SDSC-DP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:SDSC-DP a ssn:Property .
+

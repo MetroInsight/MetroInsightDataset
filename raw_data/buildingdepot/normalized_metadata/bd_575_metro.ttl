@@ -1,0 +1,2129 @@
+@prefix bf: <http://buildsys.org/ontologies/BrickFrame#> .
+@prefix brick: <http://buildsys.org/ontologies/Brick#> .
+@prefix core: <http://metroinsight.io/schema/core#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <https://schema.org/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix ws: <http://metroinsight.io/schema/workspace#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://metroinsight.io/schema/workspace#02886e0a-182a-40d8-a3b2-b22573338b0e> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001072.csv"^^xsd:string ;
+            qudt:unit unit:Inches-of-water ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.SA-SP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#050cda5d-59d0-4079-8a7d-92aeac67714b> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001059.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.CLG-CMD> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#060db308-ddd0-4b44-bebd-ee020baaadbd> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001402.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P1-SS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#0b3de860-8a00-4bad-8a7b-f03cfcd6671d> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001143.csv"^^xsd:string ;
+            qudt:unit unit:VOLT ] ;
+    ssn:observes ws:SDSC.CT-1.VOLTS-BN ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#0b4449d9-5cb4-48f9-93b8-58ae8cb8b3e1> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001134.csv"^^xsd:string ;
+            qudt:unit unit:PowerFactor-BACNet ] ;
+    ssn:observes ws:SDSC.CT-1.PWR-FCTR ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#0b8b5ae5-8b73-4af8-90f9-3ef4ca38d70a> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001113.csv"^^xsd:string ;
+            qudt:unit unit:A ] ;
+    ssn:observes ws:SDSC.CT-1.AMPS-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#0d57b8cb-023d-4ca7-929f-ed71d2286ea4> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001100.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.SF-SS> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#102f3911-113c-4602-ab86-3343e25be38c> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001124.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CT-1.KWH-RST ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#1192fac5-90d9-46b2-94db-100a92951dfa> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001385.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P15-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#1225dc14-fce1-4f1b-a39e-a4c37306c6d9> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001370.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.CH2IV-CL ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#12f7c3f6-fdd1-43d8-b3b1-3769fee0de05> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3000967.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.OCCCMD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#1309370b-d288-4cb8-b234-214dd824fa85> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001155.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWS.P10B-SS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#143fc031-362d-45b2-8907-1eddbda6890c> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001199.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-2.CCU14-AL ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#15bd74a4-a1ce-4f77-a36e-8658f58a6bf8> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001405.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P10A-SS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#19ee2ff9-6367-4630-83fb-ee77b15ac38f> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001148.csv"^^xsd:string ;
+            qudt:unit unit:Pounds-force-per-square-inch-BACNET ] ;
+    ssn:observes ws:SDSC.CHWS.CHW-DP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#1aa074b9-275a-48c0-8ba5-45d281a5ac47> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3000958.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.ACTHTGSP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#1dd1d24d-09e1-41c2-b3ed-0ca4eb08792e> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3000946.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.R-VLV1 ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#1dde85d1-fba6-48ca-beda-b85c88a17a7f> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3000978.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.ACTHTGSP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#1eed3642-0834-4c03-ae98-1d50041551b6> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3000966.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.R-VLV1 ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#202b9ec2-e853-4b6d-9d41-1fed277e57c3> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001131.csv"^^xsd:string ;
+            qudt:unit unit:KW ] ;
+    ssn:observes ws:SDSC.CT-1.POWER-A ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#20a2695e-a9d3-4bb2-bd69-88e3d12ad4fd> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001182.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-1.CCU6-ALM ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#22069984-9efc-4ff3-b783-7ef186661bae> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000952.csv"^^xsd:string ;
+            qudt:unit unit:SEC ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.CLGIT ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#2242825c-1be7-4876-ad4a-22d9ec34158f> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001064.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.FLTR-STS> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#246f0451-261b-456d-87e2-ca551cadafa1> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000972.csv"^^xsd:string ;
+            qudt:unit unit:SEC ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.CLGIT ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#2500ba63-6b10-472f-965d-368b3d72cd79> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3000945.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.CMPR1-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#26c6daf5-8854-44cc-9b24-d840c435ce53> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001361.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.CHWP.PCHWS-T ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#271419c5-40a4-426f-9cc4-08ca7d13595a> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001208.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-3.CCU12-AL ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#272633fb-eca5-4305-b0ef-1481b654a81c> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001439.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.AH-1.CLG-PB ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#282ed555-6a2c-4d49-baf3-36b9897db233> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001142.csv"^^xsd:string ;
+            qudt:unit unit:VOLT ] ;
+    ssn:observes ws:SDSC.CT-1.VOLTS-BC ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#28f80201-588e-4f58-8a02-8cfba3cec72d> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001373.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P10A-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#2b137163-924c-4bb9-9f26-d22eb648e93d> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3000968.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.OCCSTS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#2bda00a9-7cc5-493a-a315-e5f0cc5db59b> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000943.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.HEATCMD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#2c3fa9ad-77ba-48ca-a1e6-d4bc25697665> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001363.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.CHWP.SCHWS-T ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#2d597563-4812-43cc-9759-02da6d5dd7d5> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3000964.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.SF-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#2ed94e9a-bba1-43db-98ca-7cfd1e99b748> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001161.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.HTG-CMD> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#2f61210b-f2ca-4b03-850d-cb9989c2b633> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001372.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.CH1IV-CL ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#31fbb22e-acf4-4054-b54c-cdcf50f2dda5> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001429.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:P16SPD-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#321c4d5d-7863-491b-a63c-10dbdfd5c1fd> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001153.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWS.P10A-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#323db138-e89a-4bd0-9d51-2e1b72f1976d> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001159.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.DA-TMP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#35d60564-104b-4f72-a39b-4884d5650686> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001418.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.CHWP.PM8PB ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#36f5740e-c34d-4695-9f15-c90929bf529e> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001190.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-1.CCU9-ALM ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#37daa604-1980-4c8c-982d-25bdf31611e1> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001066.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.RA-TMP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#394cab2a-ca46-436b-bd01-05fc495f7bf4> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001174.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.CCU3-ALM> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#39a0ba7b-34e1-4ca1-a72d-343d9b9277ed> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001140.csv"^^xsd:string ;
+            qudt:unit unit:VOLT ] ;
+    ssn:observes ws:SDSC.CT-1.VOLTS-AC ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#3a6e22de-880b-4bb5-806e-96b622b6ee5d> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001357.csv"^^xsd:string ;
+            qudt:unit unit:Pounds-force-per-square-inch-BACNET ] ;
+    ssn:observes ws:SDSC.CHWP.SCHW-DP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#3ab5ef83-477a-433a-bd53-102a45dea1d3> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001366.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.CHWP.CA-P ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#3cc653fb-93a7-4763-b68f-18a7233ec06d> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000971.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.CLG-SP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#41eb0605-1418-43ab-b010-e2a1d7a7bda5> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001111.csv"^^xsd:string ;
+            qudt:unit unit:A ] ;
+    ssn:observes ws:SDSC.CT-1.AMPS-A ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#4234964f-b1af-4404-95d6-bbe0290bc023> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001396.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.CH1IV-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#426e3fd6-dde6-42f9-b9ee-97000f228220> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001202.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-2.CCU15-AL ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#437f04ea-4227-4199-9e21-f3b9bc6bd03b> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000942.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.COOLCMD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#44575da0-c096-4586-ab6a-cbb1a59c9c8a> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001362.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.CHWP.PCHWR-T ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#4521a745-a0a2-44c2-a1c4-e6f5487d271e> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001181.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.RM-279_B ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#46135042-7b8a-4fe5-984e-eefda8b44dfb> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001092.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.RA-TMP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#470e4469-cf8b-4cf2-ab71-180b0ba944a8> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001076.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.SF-STS> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#47613b60-206c-456e-a5d4-e500226f6580> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001151.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWS.P10A-SS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#478599ff-c891-4666-a484-abf81f29a84b> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000976.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.HTGPB ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#47a5193b-02f6-439e-9983-db93fb44813b> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000973.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.CLGPB ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#492b35d9-096b-42b9-9f25-26061cb2e93b> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000954.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.HTG-SP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#497c3345-7380-4688-b628-6d2606a2b544> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3000948.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.OCCSTS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#49d18866-4817-48a9-afc7-1d1523df7b9f> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001074.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.SF-SS> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#4a88f0fe-ef09-4e80-91b6-c9bc84a98f56> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001196.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-2.CCU13-AL ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#4cb43b29-c37f-4372-a4bf-d1d0836bde8b> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001178.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.CCU5-ALM> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#4ce5d4e9-1bea-41a4-adde-22689dc0a35f> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001406.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P10B-SS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#4fc8d8b0-e567-437b-a7ed-0d89bc9e8018> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000941.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.COMPCMD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#502911d7-0131-4aa9-a878-b616a745c27e> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001137.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CT-1.RP-RST ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#513c21b0-17ea-48c4-b981-3be2ee6a260f> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001172.csv"^^xsd:string ;
+            qudt:unit unit:Pounds-force-per-square-inch-BACNET ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.CUPCHWDP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#526057a6-7a36-409a-827d-7f5884f997e9> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001377.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P4-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#5493bc1e-6ca1-40d1-b3be-d108118dc126> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001167.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.SF-STS> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#54c47518-c2d6-48c5-8d0e-bfe02f8725ce> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001413.csv"^^xsd:string ;
+            qudt:unit unit:Pounds-force-per-square-inch-BACNET ] ;
+    ssn:observes ws:SDSC.CHWP.SCHW-DSP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#560e6f81-5b08-4f5d-9594-a23698b1ed40> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001392.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:SDSC.CHWP.P10A-SPD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#56992e10-71b4-4cdc-beae-492ddc747174> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001434.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.AH-2.DAT-SP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#56ffee26-ca24-4a8f-8ac6-59ba1f6cf22a> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001395.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.CH2-ENA ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#57fe4b66-0d54-4fde-8aa8-be81d07acfcc> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001205.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-3.CCU11-AL ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#595ac099-c4db-4827-a21d-642676096cbb> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001126.csv"^^xsd:string ;
+            qudt:unit unit:KW ] ;
+    ssn:observes ws:SDSC.CT-1.MAX-PWR ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#596720ff-e65c-4cd8-aa4a-38a28b294b62> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001157.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.CLG-CMD> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#5a8a9c87-30a8-4502-ad54-69c06c074b1b> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001422.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.CHWP.PM9TI ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#5af29a7b-923f-4a91-86c0-c30a33dd3638> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001397.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.CH2IV-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#5b629ad8-5a50-4074-949e-cdaf8385224a> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000955.csv"^^xsd:string ;
+            qudt:unit unit:SEC ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.HTGIT ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#5b90e99b-0354-489b-b719-16c0e3bbc923> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001090.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.FLTR-STS> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#5cc875f2-fe36-4ff1-9d79-723e1bdcf583> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001145.csv"^^xsd:string ;
+            qudt:unit unit:Pounds-force-per-square-inch-BACNET ] ;
+    ssn:observes ws:SDSC.CHWS.CA-P ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#5ec5ba02-2544-4ae0-8eb7-b8192bf2cf83> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000961.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.COMPCMD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#5f66370e-f635-4ae9-a89d-3f4645c1c056> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001216.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-3.P10B-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#624a3932-de35-49ba-ab6e-b0abb5e59407> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001430.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#Setpoint%20Adjust> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#67ede050-4df8-4459-b1ed-3df630cfc62c> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3000950.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.TMPOCCST ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#6b37a013-feda-4bb9-9a54-cbd284fb8c00> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3000970.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.TMPOCCST ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#6f667a07-80a9-48bd-a6fd-d92b97b015dc> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001108.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.ZN-TMP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#6fd1a951-0e0e-4d15-a6bf-0e2daa26c53f> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001400.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P14-SS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#72733124-4ed0-4c4b-8e1b-138ab410de75> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001375.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P10B-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#72a830d4-85ad-4e3a-9b87-83ba32280ff1> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3000949.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.SHUTSTS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#72e049b5-3bf7-4242-8c06-0e9813bf90be> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001399.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P5-SS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#73b75483-3bcf-40d2-b311-85ddcc36c66a> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001118.csv"^^xsd:string ;
+            qudt:unit unit:VOLT ] ;
+    ssn:observes ws:SDSC.CT-1.AVG-LN-V ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#74cc706f-e09d-49be-849f-d0f9f186ae90> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000975.csv"^^xsd:string ;
+            qudt:unit unit:SEC ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.HTGIT ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#78193f0b-9e8a-4253-b592-443caaa1a110> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3000947.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.OCCCMD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#78b34226-5631-4f15-8592-d19ab1f1e3e5> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001419.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.CHWP.PM8TI ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#78e6d295-719d-44a9-9dd7-009f6d7566db> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000956.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.HTGPB ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#7b50181b-15c7-4178-8a46-01bd0ea4a33d> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001368.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.CH2-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#7d2d2cb1-4ffa-48e8-9156-f6a089e425f3> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001537.csv"^^xsd:string ;
+            qudt:unit unit:Pounds-force-per-square-inch-BACNET ] ;
+    ssn:observes ws:CHW-DP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#7d7490a3-bc28-4a2c-b575-2dba5e4fff6f> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000953.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.CLGPB ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#838d02f9-3ab8-4756-9f67-bff82e4b83a4> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001411.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.CSYS-ENA ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#85cb86bf-e9d5-4daa-846f-afbb54e45558> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001423.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.CHWP.PM9TD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#86164efa-0821-4a3c-8c71-87e27617724f> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000963.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.HEATCMD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#86c7f320-29d1-4199-a611-6be75c6dd268> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001136.csv"^^xsd:string ;
+            qudt:unit unit:KW-reactive-BACNet ] ;
+    ssn:observes ws:SDSC.CT-1.REATPOWR ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#893652e9-099c-40d2-9931-0e388b9d4d22> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001213.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-3.REF-LO-A ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#8bc63c27-736e-43bf-adc4-93e61d50124b> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3000940.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.W-C-ADJ ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#8c2e6e25-2e24-4d18-85fa-67b8fe0423fa> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001082.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.ZN-TMP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#8c5b9551-cc31-4996-bf2d-3fdf5c2f4d4a> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001139.csv"^^xsd:string ;
+            qudt:unit unit:VOLT ] ;
+    ssn:observes ws:SDSC.CT-1.VOLTS-AB ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#8c9a1963-b8c3-4f11-9ce8-3b7938bc7b45> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001129.csv"^^xsd:string ;
+            qudt:unit unit:PowerFactor-BACNet ] ;
+    ssn:observes ws:SDSC.CT-1.PF-B ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#8cf87390-95a0-48f6-babf-59281739a037> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001102.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.SF-STS> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#8d1ede33-b789-445a-bd50-724e25687cf8> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001185.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-1.CCU7-ALM ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#8df04219-afec-476e-8bae-2525d2500e59> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001180.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.RM-279_A ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#91a4fc6e-73d8-48d3-b685-9ae51f01f16d> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001393.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:SDSC.CHWP.P10B-SPD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#91c7f2b5-e106-4157-8ff7-6a64d513ba1d> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001389.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:SDSC.CHWP.P5SPD-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#92fd9277-d5d9-4b48-bd8b-a738a0452e3d> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000951.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.CLG-SP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#960833e6-07c3-44f5-8c5a-70405018363f> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001193.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-2.CCU10-AL ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#96324c39-3062-4052-8efb-03e9450f201e> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001105.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.SMK-STS> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#98e7e333-0595-4790-a131-45cbea3d37b6> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001133.csv"^^xsd:string ;
+            qudt:unit unit:KW ] ;
+    ssn:observes ws:SDSC.CT-1.POWER-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#9c258465-425e-4106-aa6e-9623d6ee7859> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001069.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.SA-HL> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#9cdb5f3f-bedc-441a-bb0f-090774f0adbf> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3000969.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.SHUTSTS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#9d88ebec-1e58-46c6-bb02-92b3d9e928c7> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001416.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.CHWP.PM1TI ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#9eb910f5-d975-4d7f-a036-a78b07298797> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001061.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.DA-TMP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+<http://metroinsight.io/schema/workspace#9ebbb116-c001-466f-ae16-25de786198d6> a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001187.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-1.CCU8-ALM ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:a1848fe5-ed7f-48c7-90fc-fc6f5dd04928 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001121.csv"^^xsd:string ;
+            qudt:unit unit:KW ] ;
+    ssn:observes ws:SDSC.CT-1.DEMAND ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:a1ffa8ed-e983-49b2-a7eb-9f51f7abad68 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3000977.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.ACTCLGSP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:a31ac660-d19a-4d83-9081-b1c33c2b911c a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001415.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.CHWP.PM1PB ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:a46d1fd3-2c10-43e7-af68-bed1729eb26a a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001130.csv"^^xsd:string ;
+            qudt:unit unit:PowerFactor-BACNet ] ;
+    ssn:observes ws:SDSC.CT-1.PF-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:a6f69886-b06b-4420-aa35-f95dce5dc22c a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001359.csv"^^xsd:string ;
+            qudt:unit unit:GAL-PER-MIN ] ;
+    ssn:observes ws:SDSC.CHWP.CHW-FLOW ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:a87ce03e-c3a3-4171-a0f0-e0a3f513c949 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001421.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.CHWP.PM9PB ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:a9a53cf1-cf1e-48bf-ac5e-608d9f72accf a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001403.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P2-SS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:aa39f3a2-85d5-42eb-a328-8a0e21b17825 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001371.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.CH1IV-OP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:ac13480c-0467-484c-bfac-999d3b314448 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001379.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P5-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:ae2ea041-547b-42c4-9249-88819ae7f7a0 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001098.csv"^^xsd:string ;
+            qudt:unit unit:Inches-of-water ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.SA-SP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:ae815148-f2cd-4a94-8002-d034aaf04f4b a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001386.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P16-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:af1fcb79-46ab-433c-80ad-68e58494c260 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001085.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.CLG-CMD> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:b36c7d67-c721-4bf8-8810-a7cf7a393fa2 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001440.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.AH-1.CLG-IT ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:b3c518fd-2de9-4f35-94dd-254972cc695a a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001115.csv"^^xsd:string ;
+            qudt:unit unit:A ] ;
+    ssn:observes ws:SDSC.CT-1.AVG-CURR ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:ba971d2d-621e-4c0e-b6d0-3d1d41d3ea8f a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001132.csv"^^xsd:string ;
+            qudt:unit unit:KW ] ;
+    ssn:observes ws:SDSC.CT-1.POWER-B ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:bafe3f99-6e73-485d-8b91-be9a80dca341 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001123.csv"^^xsd:string ;
+            qudt:unit unit:KiloW-HR ] ;
+    ssn:observes ws:SDSC.CT-1.KW ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:bd26aa42-243a-4c46-94fc-15e7a4665460 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001390.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:SDSC.CHWP.P14SPD-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:bd484709-8b39-4f12-848a-aefbcf22d186 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001412.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.LEAD-LAG ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:bd61d516-aaef-4c1a-a692-6523eed4676e a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001436.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.AH-2.CLG-IT ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:bde0df98-15c0-47bd-bd2c-caedb8a914af a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001112.csv"^^xsd:string ;
+            qudt:unit unit:A ] ;
+    ssn:observes ws:SDSC.CT-1.AMPS-B ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:beedb833-b06c-480a-b11e-95483fe7f9ce a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001170.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.ZN-TMP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:bf7e936a-b6cc-4aa0-a700-ba93e23f487c a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001087.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.DA-TMP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:c1330b15-fce1-43e3-86f4-9d3164493eea a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001404.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P16-SS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:c1ba564b-fc68-4dca-8798-f800ef34cd89 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001127.csv"^^xsd:string ;
+            qudt:unit unit:KW ] ;
+    ssn:observes ws:SDSC.CT-1.MIN-PWR ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:c20f24ed-e014-42bf-beaf-1c7ff2b9d457 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001381.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P14-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:c227fcd0-c4c9-40d8-925c-7bbc79d5f8b6 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001117.csv"^^xsd:string ;
+            qudt:unit unit:VOLT ] ;
+    ssn:observes ws:SDSC.CT-1.AVG-LL-V ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:c27c8417-88e7-4a32-adde-04e88399c0b3 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001365.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.CHWP.BYP-T ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:c35e7a0d-faba-41bc-b54b-4a72bc3026ed a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001394.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.CH1-ENA ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:c3d3e698-8c8e-4350-82aa-93574c07f8cc a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001210.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CCU-3.REF-HI-A ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:c739478d-abbe-400c-ab2c-dc7f67eb17c5 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001407.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.PSYS-ENA ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:c7a67f58-09aa-42ce-9df4-315cb1f53107 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3000960.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.W-C-ADJ ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:ce38c3a2-b81c-4a80-9f1a-48bf660280cb a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001144.csv"^^xsd:string ;
+            qudt:unit unit:VOLT ] ;
+    ssn:observes ws:SDSC.CT-1.VOLTS-CN ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:d18f2d43-df36-448e-aa9e-443caee9719c a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001367.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.CH1-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:d1fab4aa-0c28-4824-9c2c-8bc02f986ec0 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001114.csv"^^xsd:string ;
+            qudt:unit unit:KW ] ;
+    ssn:observes ws:SDSC.CT-1.APP-POWR ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:d1fb53b6-f32b-477c-bfd9-2cf67f84525c a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001417.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.CHWP.PM1TD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:d3e13c6d-11e0-4b5d-8a0d-4fe4622c5c07 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001141.csv"^^xsd:string ;
+            qudt:unit unit:VOLT ] ;
+    ssn:observes ws:SDSC.CT-1.VOLTS-AN ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:d64e2142-3872-450f-9105-c045f17f85e7 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001079.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.SMK-STS> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:d71c3a11-d8c9-48d8-8fce-96c74cf9d9e5 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001401.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P15-SS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:d7670170-b4f5-4bb3-a0e0-8cb5e313e2c8 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001095.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.SA-HL> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:d77aad84-c3ad-43e8-a96e-7e3625241983 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001384.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P2-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:dbd99b69-4b2c-411c-8daa-24f37968fef0 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001438.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.AH-1.DAT-SP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:dbff0ff6-fb36-4594-b0d8-ecc7fe833a90 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001369.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.CH2IV-OP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:dd0d421f-6a3c-4e4b-b362-2d3e96976eee a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001435.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.AH-2.CLG-PB ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:ddff9fec-3424-4bc4-809c-c9d76976be6c a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001163.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.OSA-TMP> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:e1fbc501-a2b5-4952-afad-956caab0dbff a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3000957.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.ACTCLGSP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:e4b81c0d-9bd5-4d32-a4f0-51b205522a52 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3000965.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.CMPR1-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:e91dbe62-7cf8-4341-b025-3173112b8560 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001176.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.CCU4-ALM> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:e985bbb1-f567-460f-90ee-99f5a2fc005e a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000962.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.COOLCMD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:ee59f13f-8bf0-4223-903a-f1a868fe840a a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001420.csv"^^xsd:string ;
+            qudt:unit unit:No-units ] ;
+    ssn:observes ws:SDSC.CHWP.PM8TD ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:ef6450ad-4e1e-48c8-860b-0ded5872f2c0 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_3_3001383.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P1-STS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:ef75b655-583c-4496-8455-0a5f8ce8d639 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001364.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.CHWP.SCHWR-T ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:efe042bd-a1dd-4ca0-93aa-fa4a63664ebd a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001128.csv"^^xsd:string ;
+            qudt:unit unit:PowerFactor-BACNet ] ;
+    ssn:observes ws:SDSC.CT-1.PF-A ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:f0eae316-b6f0-417c-9596-075cce684725 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001408.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P1-ENA ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:f0fef5db-efd3-4e5e-bff6-fcdd3131fd1e a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3000944.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1A.SF-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:f1431536-992f-4366-b32a-cd2651ecc2d0 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3000974.csv"^^xsd:string ;
+            qudt:unit unit:DEG_F ] ;
+    ssn:observes ws:SDSC.LAB-279.HP-1B.HTG-SP ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:f164d926-7b21-4d35-ba93-0993de49a8e0 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001398.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P4-SS ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:f500fd91-26d2-448e-868d-064160cc0316 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001410.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P15-ENA ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:f50b517c-4b83-4278-a169-5b3d11cac8f6 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001409.csv"^^xsd:string ] ;
+    ssn:observes ws:SDSC.CHWP.P2-ENA ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:f9943a28-7cb1-4a00-bfc4-f88f3ed18925 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_1_3001388.csv"^^xsd:string ;
+            qudt:unit unit:Percent-BACNET ] ;
+    ssn:observes ws:SDSC.CHWP.P4SPD-C ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:faa27b84-2b28-40c3-9495-1d3d451abf11 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_4_3001165.csv"^^xsd:string ] ;
+    ssn:observes <http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.SF-SS> ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:fc2121d9-2d98-44e8-a131-c1b576e9c852 a ssn:Sensor ;
+    rdfs:label ""^^xsd:string ;
+    ssn:hasOutput [ a core:DataStream ;
+            core:hasDataReference "raw_data/buildingdepot/data/575_0_3001119.csv"^^xsd:string ;
+            qudt:unit unit:KW ] ;
+    ssn:observes ws:SDSC.CT-1.AVG-PWR ;
+    schema:location [ a geo:Point ;
+            geo:lat "32.884265"^^xsd:float ;
+            geo:long "-117.239868"^^xsd:float ] .
+
+ws:CHW-DP a ssn:Property .
+
+ws:P16SPD-C a ssn:Property .
+
+ws:SDSC.AH-1.CLG-IT a ssn:Property .
+
+ws:SDSC.AH-1.CLG-PB a ssn:Property .
+
+ws:SDSC.AH-1.DAT-SP a ssn:Property .
+
+ws:SDSC.AH-2.CLG-IT a ssn:Property .
+
+ws:SDSC.AH-2.CLG-PB a ssn:Property .
+
+ws:SDSC.AH-2.DAT-SP a ssn:Property .
+
+ws:SDSC.CCU-1.CCU6-ALM a ssn:Property .
+
+ws:SDSC.CCU-1.CCU7-ALM a ssn:Property .
+
+ws:SDSC.CCU-1.CCU8-ALM a ssn:Property .
+
+ws:SDSC.CCU-1.CCU9-ALM a ssn:Property .
+
+ws:SDSC.CCU-2.CCU10-AL a ssn:Property .
+
+ws:SDSC.CCU-2.CCU13-AL a ssn:Property .
+
+ws:SDSC.CCU-2.CCU14-AL a ssn:Property .
+
+ws:SDSC.CCU-2.CCU15-AL a ssn:Property .
+
+ws:SDSC.CCU-3.CCU11-AL a ssn:Property .
+
+ws:SDSC.CCU-3.CCU12-AL a ssn:Property .
+
+ws:SDSC.CCU-3.P10B-STS a ssn:Property .
+
+ws:SDSC.CCU-3.REF-HI-A a ssn:Property .
+
+ws:SDSC.CCU-3.REF-LO-A a ssn:Property .
+
+ws:SDSC.CHWP.BYP-T a ssn:Property .
+
+ws:SDSC.CHWP.CA-P a ssn:Property .
+
+ws:SDSC.CHWP.CH1-ENA a ssn:Property .
+
+ws:SDSC.CHWP.CH1-STS a ssn:Property .
+
+ws:SDSC.CHWP.CH1IV-C a ssn:Property .
+
+ws:SDSC.CHWP.CH1IV-CL a ssn:Property .
+
+ws:SDSC.CHWP.CH1IV-OP a ssn:Property .
+
+ws:SDSC.CHWP.CH2-ENA a ssn:Property .
+
+ws:SDSC.CHWP.CH2-STS a ssn:Property .
+
+ws:SDSC.CHWP.CH2IV-C a ssn:Property .
+
+ws:SDSC.CHWP.CH2IV-CL a ssn:Property .
+
+ws:SDSC.CHWP.CH2IV-OP a ssn:Property .
+
+ws:SDSC.CHWP.CHW-FLOW a ssn:Property .
+
+ws:SDSC.CHWP.CSYS-ENA a ssn:Property .
+
+ws:SDSC.CHWP.LEAD-LAG a ssn:Property .
+
+ws:SDSC.CHWP.P1-ENA a ssn:Property .
+
+ws:SDSC.CHWP.P1-SS a ssn:Property .
+
+ws:SDSC.CHWP.P1-STS a ssn:Property .
+
+ws:SDSC.CHWP.P10A-SPD a ssn:Property .
+
+ws:SDSC.CHWP.P10A-SS a ssn:Property .
+
+ws:SDSC.CHWP.P10A-STS a ssn:Property .
+
+ws:SDSC.CHWP.P10B-SPD a ssn:Property .
+
+ws:SDSC.CHWP.P10B-SS a ssn:Property .
+
+ws:SDSC.CHWP.P10B-STS a ssn:Property .
+
+ws:SDSC.CHWP.P14-SS a ssn:Property .
+
+ws:SDSC.CHWP.P14-STS a ssn:Property .
+
+ws:SDSC.CHWP.P14SPD-C a ssn:Property .
+
+ws:SDSC.CHWP.P15-ENA a ssn:Property .
+
+ws:SDSC.CHWP.P15-SS a ssn:Property .
+
+ws:SDSC.CHWP.P15-STS a ssn:Property .
+
+ws:SDSC.CHWP.P16-SS a ssn:Property .
+
+ws:SDSC.CHWP.P16-STS a ssn:Property .
+
+ws:SDSC.CHWP.P2-ENA a ssn:Property .
+
+ws:SDSC.CHWP.P2-SS a ssn:Property .
+
+ws:SDSC.CHWP.P2-STS a ssn:Property .
+
+ws:SDSC.CHWP.P4-SS a ssn:Property .
+
+ws:SDSC.CHWP.P4-STS a ssn:Property .
+
+ws:SDSC.CHWP.P4SPD-C a ssn:Property .
+
+ws:SDSC.CHWP.P5-SS a ssn:Property .
+
+ws:SDSC.CHWP.P5-STS a ssn:Property .
+
+ws:SDSC.CHWP.P5SPD-C a ssn:Property .
+
+ws:SDSC.CHWP.PCHWR-T a ssn:Property .
+
+ws:SDSC.CHWP.PCHWS-T a ssn:Property .
+
+ws:SDSC.CHWP.PM1PB a ssn:Property .
+
+ws:SDSC.CHWP.PM1TD a ssn:Property .
+
+ws:SDSC.CHWP.PM1TI a ssn:Property .
+
+ws:SDSC.CHWP.PM8PB a ssn:Property .
+
+ws:SDSC.CHWP.PM8TD a ssn:Property .
+
+ws:SDSC.CHWP.PM8TI a ssn:Property .
+
+ws:SDSC.CHWP.PM9PB a ssn:Property .
+
+ws:SDSC.CHWP.PM9TD a ssn:Property .
+
+ws:SDSC.CHWP.PM9TI a ssn:Property .
+
+ws:SDSC.CHWP.PSYS-ENA a ssn:Property .
+
+ws:SDSC.CHWP.SCHW-DP a ssn:Property .
+
+ws:SDSC.CHWP.SCHW-DSP a ssn:Property .
+
+ws:SDSC.CHWP.SCHWR-T a ssn:Property .
+
+ws:SDSC.CHWP.SCHWS-T a ssn:Property .
+
+ws:SDSC.CHWS.CA-P a ssn:Property .
+
+ws:SDSC.CHWS.CHW-DP a ssn:Property .
+
+ws:SDSC.CHWS.P10A-SS a ssn:Property .
+
+ws:SDSC.CHWS.P10A-STS a ssn:Property .
+
+ws:SDSC.CHWS.P10B-SS a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.CLG-CMD> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.DA-TMP> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.FLTR-STS> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.RA-TMP> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.SA-HL> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.SA-SP> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.SF-SS> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.SF-STS> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.SMK-STS> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.CRAY%20UPS%20AH-1.ZN-TMP> a ssn:Property .
+
+ws:SDSC.CT-1.AMPS-A a ssn:Property .
+
+ws:SDSC.CT-1.AMPS-B a ssn:Property .
+
+ws:SDSC.CT-1.AMPS-C a ssn:Property .
+
+ws:SDSC.CT-1.APP-POWR a ssn:Property .
+
+ws:SDSC.CT-1.AVG-CURR a ssn:Property .
+
+ws:SDSC.CT-1.AVG-LL-V a ssn:Property .
+
+ws:SDSC.CT-1.AVG-LN-V a ssn:Property .
+
+ws:SDSC.CT-1.AVG-PWR a ssn:Property .
+
+ws:SDSC.CT-1.DEMAND a ssn:Property .
+
+ws:SDSC.CT-1.KW a ssn:Property .
+
+ws:SDSC.CT-1.KWH-RST a ssn:Property .
+
+ws:SDSC.CT-1.MAX-PWR a ssn:Property .
+
+ws:SDSC.CT-1.MIN-PWR a ssn:Property .
+
+ws:SDSC.CT-1.PF-A a ssn:Property .
+
+ws:SDSC.CT-1.PF-B a ssn:Property .
+
+ws:SDSC.CT-1.PF-C a ssn:Property .
+
+ws:SDSC.CT-1.POWER-A a ssn:Property .
+
+ws:SDSC.CT-1.POWER-B a ssn:Property .
+
+ws:SDSC.CT-1.POWER-C a ssn:Property .
+
+ws:SDSC.CT-1.PWR-FCTR a ssn:Property .
+
+ws:SDSC.CT-1.REATPOWR a ssn:Property .
+
+ws:SDSC.CT-1.RP-RST a ssn:Property .
+
+ws:SDSC.CT-1.VOLTS-AB a ssn:Property .
+
+ws:SDSC.CT-1.VOLTS-AC a ssn:Property .
+
+ws:SDSC.CT-1.VOLTS-AN a ssn:Property .
+
+ws:SDSC.CT-1.VOLTS-BC a ssn:Property .
+
+ws:SDSC.CT-1.VOLTS-BN a ssn:Property .
+
+ws:SDSC.CT-1.VOLTS-CN a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.ACTCLGSP a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.ACTHTGSP a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.CLG-SP a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.CLGIT a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.CLGPB a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.CMPR1-C a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.COMPCMD a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.COOLCMD a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.HEATCMD a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.HTG-SP a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.HTGIT a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.HTGPB a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.OCCCMD a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.OCCSTS a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.R-VLV1 a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.RM-279_A a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.SF-C a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.SHUTSTS a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.TMPOCCST a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1A.W-C-ADJ a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.ACTCLGSP a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.ACTHTGSP a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.CLG-SP a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.CLGIT a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.CLGPB a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.CMPR1-C a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.COMPCMD a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.COOLCMD a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.HEATCMD a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.HTG-SP a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.HTGIT a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.HTGPB a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.OCCCMD a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.OCCSTS a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.R-VLV1 a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.RM-279_B a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.SF-C a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.SHUTSTS a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.TMPOCCST a ssn:Property .
+
+ws:SDSC.LAB-279.HP-1B.W-C-ADJ a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.CCU3-ALM> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.CCU4-ALM> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.CCU5-ALM> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.CLG-CMD> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.CUPCHWDP> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.DA-TMP> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.HTG-CMD> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.OSA-TMP> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.SF-SS> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.SF-STS> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.R%20WEST.MAU-2.ZN-TMP> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.CLG-CMD> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.DA-TMP> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.FLTR-STS> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.RA-TMP> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.SA-HL> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.SA-SP> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.SF-SS> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.SF-STS> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.SMK-STS> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#SDSC.UPS%20AH-2.ZN-TMP> a ssn:Property .
+
+<http://metroinsight.io/schema/workspace#Setpoint%20Adjust> a ssn:Property .
+

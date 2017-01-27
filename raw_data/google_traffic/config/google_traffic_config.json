@@ -1,0 +1,16 @@
+{
+	"db_url":"http://mesl-exp.ucsd.edu:8086",
+	"measurement_list":[
+		"gilman1_1",
+		"gilman1_2",
+		"hopkins1_1",
+		"hopkins1_2",
+		"scholars1_1",
+		"scholars1_2",
+		"voigt1_1",
+		"voigt1_2",
+		"voigt2_1",
+		"voigt2_2"
+		]
+
+}
