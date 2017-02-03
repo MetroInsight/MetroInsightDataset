@@ -22,6 +22,11 @@ UPDATE: You cannot find data here to avoid privacy leak. Please contact Jason Ko
 1. It is collected from Google Travel Time API. Several routes in UCSD campus are being observed.
 2. Routes' metadata can be found in raw\_data/google\_traffic/metadata/routes\_metadata.json
 
+## Mesowest Weather Data
+
+1. Contains weather sensor data collected via the Mesowest / SynopticLabs API.
+2. Metadata contains information about each sensor and the metrics collected, which are stored as csv files per-sensor in the data directory.
+
 ## More to come
 1. Weather center data
 2. UCSD weather measurement
