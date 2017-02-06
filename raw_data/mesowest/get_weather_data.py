@@ -6,6 +6,9 @@ import json
 import os
 from pprint import pprint
 
+with open('config/mesowest_secret.json', 'r') as fp:
+    api_key = json.load(fp)['apikey']
+
 api_key = 'api_key'
 token = 'token'
 
