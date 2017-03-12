@@ -1,7 +1,6 @@
 This repository contains the dataset used to MetroInsight Project. It may be deprecated after stabilizing the webservice.
 
-
-### Datsets
+# Datsets
 
 In each Dataset, you can find data in ./data and metadata in ./metadata.
 UPDATE: You cannot find data here to avoid privacy leak. Please contact Jason Koh to get an access to Googld Drive data folder.
@@ -27,7 +26,19 @@ UPDATE: You cannot find data here to avoid privacy leak. Please contact Jason Ko
 1. Contains weather sensor data collected via the Mesowest / SynopticLabs API.
 2. Metadata contains information about each sensor and the metrics collected, which are stored as csv files per-sensor in the data directory.
 
-## More to come
-1. Weather center data
-2. UCSD weather measurement
-3. Air pollution data
+## Wifier data
+
+1. Cotnains Wifier project data consisting of MesoWest, NWS Digistal Forecast and HRRRX forcast.
+
+
+
+# For developers,
+
+## Directory structure
+- *_citadel_dump_uploader.py is a file to upload a bunch of static data of the dataset.
+- *_citadel_connector.py is a file to upload live data of the dataset continuously.
+
+## Running instruction
+- Install citadel-python-client in citadel-python-client/ directory by the following steps:
+  1. cd citadel-python-client
+  2. python setup.py install

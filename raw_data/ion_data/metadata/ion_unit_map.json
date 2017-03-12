@@ -1,0 +1,18 @@
+{
+  "CHW Flo": "Gallons-PER-MIN",
+  "CHW MBTUS/Hr": "MBTU-PER-HOUR",
+  "CHW RT":"DEG_F",
+  "CHW ST":"DEG_F",
+  "CHW TOT": "MBTU",
+  "HTW Flo": "Gallons-PER-MIN",
+  "HTW MBTUS/Hr": "MBTU-PER-HOUR",
+  "HTW RT":"DEG_F",
+  "HTW ST":"DEG_F",
+  "HTW Tot": "MBTU",
+  "MTW Flo": "Gallons-PER-MIN",
+  "MTW MBTUSperHr": "MBTU-PER-HOUR",
+  "MTW RT":"DEG_F",
+  "MTW ST":"DEG_F",
+  "MTW Tot": "MBTU",
+  "Real Power": "KW"
+}

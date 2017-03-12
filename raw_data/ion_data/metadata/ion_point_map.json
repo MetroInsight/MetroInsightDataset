@@ -1,0 +1,18 @@
+{
+  "CHW Flo": "waterflow",
+  "CHW MBTUS/Hr": "thermal power",
+  "CHW RT":"temperature",
+  "CHW ST":"temperature",
+  "CHW TOT": "thermal energy",
+  "HTW Flo": "waterflow",
+  "HTW MBTUS/Hr": "thermal power",
+  "HTW RT":"temperature",
+  "HTW ST":"temperature",
+  "HTW Tot": "thermal energy",
+  "MTW Flo": "waterflow",
+  "MTW MBTUSperHr": "thermal power",
+  "MTW RT":"temperature",
+  "MTW ST":"temperature",
+  "MTW Tot": "thermal energy",
+  "Real Power": "electrical power"
+}
