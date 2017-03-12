@@ -52,7 +52,7 @@ for filename in filenames:
                     'source_reference': 'ucsd_ion'
                     },
                 'geometry':{
-                    'coordinates': [metadata['latitude'], metadata['longitude']],
+                    'coordinates': [metadata['longitude'], metadata['latitude']],
                     'type': 'Point'
                     }
                 }
