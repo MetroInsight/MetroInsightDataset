@@ -2,6 +2,6 @@
 	"hostname":"https://bd-datas1.ucsd.edu",
 	"valid_naes":["505", "506"],
 	"begin_time":"2017-01-01T00:00:00",
-	"end_time":"2017-01-27T00:00:00",
+	"end_time":"2017-03-11T00:00:00",
 	"base_dir":"./data"
 }

@@ -1,0 +1,8 @@
+{
+  "d": "DEG",
+  "mps": "MI-PER-SEC",
+  "W/m**2": "W-PER-M2",
+  "F": "DEG_F",
+  "ppm": "PPM",
+  "%": "PERCENT"
+}

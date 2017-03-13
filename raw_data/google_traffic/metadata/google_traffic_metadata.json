@@ -1,62 +1,112 @@
 {
-	"voigt1_1": {
-		"location":{
-			"latitude":32.881207, 
-			"longitude": -117.229525
-		}
-	},
-	"voigt2_1": {
-		"location":{
-			"latitude":32.878602, 
-			"longitude":-117.21879
-		}
-	},
-	"gilman1_1": {
-		"location":{
-			"latitude":32.876222,
-			"longitude":-117.23014
-		}
-	},
-	"scholars1_1": {
-		"location":{
-			"latitude":32.881387,
-			"longitude":-117.242432
-		}
-	},
-	"voigt1_2": {
-		"location":{
-			"latitude":32.883432, 
-			"longitude":-117.238495
-		}
-	},
-	"hopkins1_1": {
-		"location":{
-			"latitude":32.883612, 
-			"longitude":-117.238656
-		}
-	},
-	"hopkins1_2": {
-		"location":{
-			"latitude":32.88882, 
-			"longitude":-117.240318
-		}
-	},
-	"scholars1_2": {
-		"location":{
-			"latitude":32.888676, 
-			"longitude":-117.241928
-		}
-	},
-	"voigt2_2": {
-		"location":{
-			"latitude":32.882075, 
-			"longitude":-117.227492
-		}
-	},
-	"gilman1_2": {
-		"location":{
-			"latitude":32.872524, 
-			"longitude":-117.237882
-		}
-	}
+  "voigt1_1": {
+    "unit": "SEC",
+    "point_type": "time",
+    "latitude": 32.881207,
+    "longitude": -117.229525,
+    "start_latitude": 32.881207,
+    "start_longitude": -117.229525,
+    "end_latitude": 32.883432,
+    "end_longitude": -117.238495,
+    "name": "voigt1_1_travel_time"
+  },
+  "voigt2_1": {
+    "unit": "SEC",
+    "point_type": "time",
+    "latitude": 32.878602,
+    "longitude": -117.21879,
+    "start_latitude": 32.878602,
+    "start_longitude": -117.21879,
+    "end_latitude": 32.882075,
+    "end_longitude": -117.227492,
+    "name": "voigt2_1_travel_time"
+  },
+  "gilman1_1": {
+    "unit": "SEC",
+    "point_type": "time",
+    "latitude": 32.876222,
+    "longitude": -117.23014,
+    "start_latitude": 32.876222,
+    "start_longitude": -117.23014,
+    "end_latitude": 32.872524,
+    "end_longitude": -117.237882,
+    "name": "gilman1_1_travel_time"
+  },
+  "scholars1_1": {
+    "unit": "SEC",
+    "point_type": "time",
+    "latitude": 32.881387,
+    "longitude": -117.242432,
+    "start_latitude": 32.881387,
+    "start_longitude": -117.242432,
+    "end_latitude": 32.888676,
+    "end_longitude": -117.241928,
+    "name": "scholars1_1_travel_time"
+  },
+  "voigt1_2": {
+    "unit": "SEC",
+    "point_type": "time",
+    "latitude": 32.883432,
+    "longitude": -117.238495,
+    "start_latitude": 32.883432,
+    "start_longitude": -117.238495,
+    "end_latitude": 32.881207,
+    "end_longitude": -117.229525,
+    "name": "voigt1_2_travel_time"
+  },
+  "hopkins1_1": {
+    "unit": "SEC",
+    "point_type": "time",
+    "latitude": 32.883612,
+    "longitude": -117.238656,
+    "start_latitude": 32.883612,
+    "start_longitude": -117.238656,
+    "end_latitude": 32.88882,
+    "end_longitude": -117.240318,
+    "name": "hopkins1_1_travel_time"
+  },
+  "hopkins1_2": {
+    "unit": "SEC",
+    "point_type": "time",
+    "latitude": 32.88882,
+    "longitude": -117.240318,
+    "start_latitude": 32.88882,
+    "start_longitude": -117.240318,
+    "end_latitude": 32.883612,
+    "end_longitude": -117.238656,
+    "name": "hopkins1_2_travel_time"
+  },
+  "scholars1_2": {
+    "unit": "SEC",
+    "point_type": "time",
+    "latitude": 32.888676,
+    "longitude": -117.241928,
+    "start_latitude": 32.888676,
+    "start_longitude": -117.241928,
+    "end_latitude": 32.881387,
+    "end_longitude": -117.242432,
+    "name": "scholars1_2_travel_time"
+  },
+  "voigt2_2": {
+    "unit": "SEC",
+    "point_type": "time",
+    "latitude": 32.882075,
+    "longitude": -117.227492,
+    "start_latitude": 32.882075,
+    "start_longitude": -117.227492,
+    "end_latitude": 32.878602,
+    "end_longitude": -117.21879,
+    "name": "voigt2_2_travel_time"
+  },
+  "gilman1_2": {
+    "unit": "SEC",
+    "point_type": "time",
+    "latitude": 32.872524,
+    "longitude": -117.237882,
+    "start_latitude": 32.872524,
+    "start_longitude": -117.237882,
+    "end_latitude": 32.876222,
+    "end_longitude": -117.23014,
+    "name": "gilman1_2_travel_time"
+  }
 }
