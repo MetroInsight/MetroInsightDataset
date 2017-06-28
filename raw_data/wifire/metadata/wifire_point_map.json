@@ -1,6 +1,6 @@
 {
   "wind_direction": "wind_direction",
-  "relative_humidity": "relatvie_humidity",
+  "relative_humidity": "relative_humidity",
   "solar_radiation":   "solar_radiation",
   "temperature": "temperature",
   "ozone": "ozone_level",

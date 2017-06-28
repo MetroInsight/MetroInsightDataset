@@ -10,16 +10,16 @@ from citadel import Citadel
 import config
 
 
+
 parser = argparse.ArgumentParser(description='Run data dump uploader')
 parser.add_argument('-dataset', dest='dataset_name', type=str)
 parser.add_argument('-datasource', dest='source_reference', type=str)
 
-assert(False)
-
+args = parser.parse_args()
+dataset_name = args.dataset_name
+source_reference = args.source_reference
 
 citadel = Citadel(config.CITADEL_URL)
-dataset_name = 'google_traffic'
-source_reference = 'google_maps'
 
 base_dir = config.BASE_DIR + '/raw_data/' + dataset_name
 data_dir = base_dir + '/data'
@@ -34,6 +34,7 @@ for (dirpath, dirname, filename) in walk(data_dir):
     filenames.extend(filename)
     break
 
+
 failed_point_list = list()
 for filename in filenames:
     srcid = filename[:-4]
@@ -43,7 +44,7 @@ for filename in filenames:
     # Load the metadata file.
     metadata = metadata_dict[srcid]
     # Load time series data
-    data = pd.Series.from_csv(filename)
+    data = pd.Series.from_csv(filename, header=0)
     try:
         # Skip a data if the data does not have location information
         assert(isinstance(metadata['latitude'], float))
@@ -73,6 +74,7 @@ for filename in filenames:
     except:
         failed_point_list.append(srcid)
         continue
+
     try:
         # Create a point at Citadel
         res = citadel.create_point(new_metadata)
@@ -91,5 +93,5 @@ for filename in filenames:
         pdb.set_trace()
 
 # Store failed points for future review
-with open('ion_failed_points.json', 'w') as fp:
+with open('%s_failed_points.json'%dataset_name, 'w') as fp:
     json.dump(failed_point_list, fp)

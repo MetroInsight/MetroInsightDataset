@@ -1,4 +1,95 @@
 {
+    "W9IF-4 Torrey Pines Glider_temperature": {
+        "latitude": 32.89,
+        "longitude": -117.25,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "W9IF-4 Torrey Pines Glider_temperature"
+    },
+    "Torrey Pines_temperature": {
+        "latitude": 32.901,
+        "longitude": -117.25,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "Torrey Pines_temperature"
+    },
+    "N6NKF Del Mar_temperature": {
+        "latitude": 32.94533,
+        "longitude": -117.245,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "N6NKF Del Mar_temperature"
+    },
+    "K6SKM San Diego_temperature": {
+        "latitude": 32.84917,
+        "longitude": -117.20817,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "K6SKM San Diego_temperature"
+    },
+    "La Jolla_temperature": {
+        "latitude": 32.8667,
+        "longitude": -117.258,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "La Jolla_temperature"
+    },
+    "DW3101 Torrey Pines Reserve_temperature": {
+        "latitude": 32.92109,
+        "longitude": -117.25306,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "DW3101 Torrey Pines Reserve_temperature"
+    },
+    "KE6BZI San Diego_temperature": {
+        "latitude": 32.83577,
+        "longitude": -117.19907,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "KE6BZI San Diego_temperature"
+    },
+    "DW5079 San Diego_temperature": {
+        "latitude": 32.95517,
+        "longitude": -117.20617,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "DW5079 San Diego_temperature"
+    },
+    "Mount Soledad_temperature": {
+        "latitude": 32.814,
+        "longitude": -117.241,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "Mount Soledad_temperature"
+    },
+    "EW3170 La Jolla_temperature": {
+        "latitude": 32.87083,
+        "longitude": -117.25083,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "EW3170 La Jolla_temperature"
+    },
+    "EW3218 Del Mar_temperature": {
+        "latitude": 32.955,
+        "longitude": -117.259,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "EW3218 Del Mar_temperature"
+    },
+    "La Jolla Heights_temperature": {
+        "latitude": 32.84426,
+        "longitude": -117.23973,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "La Jolla Heights_temperature"
+    },
+    "FW0528 San Diego_temperature": {
+        "latitude": 32.8255,
+        "longitude": -117.19967,
+        "point_type": "temperature",
+        "unit": "DEG_F",
+        "name": "FW0528 San Diego_temperature"
+    },
     "W9IF-4 Torrey Pines Glider_wind_direction": {
         "latitude": 32.89,
         "longitude": -117.25,
@@ -97,12 +188,82 @@
         "unit": "DEG",
         "name": "FW0528 San Diego_wind_direction"
     },
-    "Del Mar - Mira Costa_ozone": {
-        "latitude": 32.952087,
-        "longitude": -117.264061,
-        "point_type": "ozone_level",
-        "unit": "PPM",
-        "name": "Del Mar - Mira Costa_ozone"
+    "Torrey Pines_relative_humidity": {
+        "latitude": 32.901,
+        "longitude": -117.25,
+        "point_type": "relative_humidity",
+        "unit": "PERCENT",
+        "name": "Torrey Pines_relative_humidity"
+    },
+    "N6NKF Del Mar_relative_humidity": {
+        "latitude": 32.94533,
+        "longitude": -117.245,
+        "point_type": "relative_humidity",
+        "unit": "PERCENT",
+        "name": "N6NKF Del Mar_relative_humidity"
+    },
+    "K6SKM San Diego_relative_humidity": {
+        "latitude": 32.84917,
+        "longitude": -117.20817,
+        "point_type": "relative_humidity",
+        "unit": "PERCENT",
+        "name": "K6SKM San Diego_relative_humidity"
+    },
+    "DW3101 Torrey Pines Reserve_relative_humidity": {
+        "latitude": 32.92109,
+        "longitude": -117.25306,
+        "point_type": "relative_humidity",
+        "unit": "PERCENT",
+        "name": "DW3101 Torrey Pines Reserve_relative_humidity"
+    },
+    "KE6BZI San Diego_relative_humidity": {
+        "latitude": 32.83577,
+        "longitude": -117.19907,
+        "point_type": "relative_humidity",
+        "unit": "PERCENT",
+        "name": "KE6BZI San Diego_relative_humidity"
+    },
+    "DW5079 San Diego_relative_humidity": {
+        "latitude": 32.95517,
+        "longitude": -117.20617,
+        "point_type": "relative_humidity",
+        "unit": "PERCENT",
+        "name": "DW5079 San Diego_relative_humidity"
+    },
+    "Mount Soledad_relative_humidity": {
+        "latitude": 32.814,
+        "longitude": -117.241,
+        "point_type": "relative_humidity",
+        "unit": "PERCENT",
+        "name": "Mount Soledad_relative_humidity"
+    },
+    "EW3170 La Jolla_relative_humidity": {
+        "latitude": 32.87083,
+        "longitude": -117.25083,
+        "point_type": "relative_humidity",
+        "unit": "PERCENT",
+        "name": "EW3170 La Jolla_relative_humidity"
+    },
+    "EW3218 Del Mar_relative_humidity": {
+        "latitude": 32.955,
+        "longitude": -117.259,
+        "point_type": "relative_humidity",
+        "unit": "PERCENT",
+        "name": "EW3218 Del Mar_relative_humidity"
+    },
+    "La Jolla Heights_relative_humidity": {
+        "latitude": 32.84426,
+        "longitude": -117.23973,
+        "point_type": "relative_humidity",
+        "unit": "PERCENT",
+        "name": "La Jolla Heights_relative_humidity"
+    },
+    "FW0528 San Diego_relative_humidity": {
+        "latitude": 32.8255,
+        "longitude": -117.19967,
+        "point_type": "relative_humidity",
+        "unit": "PERCENT",
+        "name": "FW0528 San Diego_relative_humidity"
     },
     "W9IF-4 Torrey Pines Glider_wind_speed": {
         "latitude": 32.89,
@@ -202,82 +363,12 @@
         "unit": "MI-PER-SEC",
         "name": "FW0528 San Diego_wind_speed"
     },
-    "Torrey Pines_relative_humidity": {
-        "latitude": 32.901,
-        "longitude": -117.25,
-        "point_type": "relatvie_humidity",
-        "unit": "PERCENT",
-        "name": "Torrey Pines_relative_humidity"
-    },
-    "N6NKF Del Mar_relative_humidity": {
-        "latitude": 32.94533,
-        "longitude": -117.245,
-        "point_type": "relatvie_humidity",
-        "unit": "PERCENT",
-        "name": "N6NKF Del Mar_relative_humidity"
-    },
-    "K6SKM San Diego_relative_humidity": {
-        "latitude": 32.84917,
-        "longitude": -117.20817,
-        "point_type": "relatvie_humidity",
-        "unit": "PERCENT",
-        "name": "K6SKM San Diego_relative_humidity"
-    },
-    "DW3101 Torrey Pines Reserve_relative_humidity": {
-        "latitude": 32.92109,
-        "longitude": -117.25306,
-        "point_type": "relatvie_humidity",
-        "unit": "PERCENT",
-        "name": "DW3101 Torrey Pines Reserve_relative_humidity"
-    },
-    "KE6BZI San Diego_relative_humidity": {
-        "latitude": 32.83577,
-        "longitude": -117.19907,
-        "point_type": "relatvie_humidity",
-        "unit": "PERCENT",
-        "name": "KE6BZI San Diego_relative_humidity"
-    },
-    "DW5079 San Diego_relative_humidity": {
-        "latitude": 32.95517,
-        "longitude": -117.20617,
-        "point_type": "relatvie_humidity",
-        "unit": "PERCENT",
-        "name": "DW5079 San Diego_relative_humidity"
-    },
-    "Mount Soledad_relative_humidity": {
-        "latitude": 32.814,
-        "longitude": -117.241,
-        "point_type": "relatvie_humidity",
-        "unit": "PERCENT",
-        "name": "Mount Soledad_relative_humidity"
-    },
-    "EW3170 La Jolla_relative_humidity": {
-        "latitude": 32.87083,
-        "longitude": -117.25083,
-        "point_type": "relatvie_humidity",
-        "unit": "PERCENT",
-        "name": "EW3170 La Jolla_relative_humidity"
-    },
-    "EW3218 Del Mar_relative_humidity": {
-        "latitude": 32.955,
-        "longitude": -117.259,
-        "point_type": "relatvie_humidity",
-        "unit": "PERCENT",
-        "name": "EW3218 Del Mar_relative_humidity"
-    },
-    "La Jolla Heights_relative_humidity": {
-        "latitude": 32.84426,
-        "longitude": -117.23973,
-        "point_type": "relatvie_humidity",
-        "unit": "PERCENT",
-        "name": "La Jolla Heights_relative_humidity"
-    },
-    "FW0528 San Diego_relative_humidity": {
-        "latitude": 32.8255,
-        "longitude": -117.19967,
-        "point_type": "relatvie_humidity",
-        "unit": "PERCENT",
-        "name": "FW0528 San Diego_relative_humidity"
+    "Del Mar - Mira Costa_ozone": {
+        "latitude": 32.952087,
+        "longitude": -117.264061,
+        "point_type": "ozone_level",
+        "unit": "PPM",
+        "name": "Del Mar - Mira Costa_ozone"
     },
     "Torrey Pines_solar_radiation": {
         "latitude": 32.901,
@@ -306,96 +397,5 @@
         "point_type": "solar_radiation",
         "unit": "W-PER-M2",
         "name": "DW3101 Torrey Pines Reserve_solar_radiation"
-    },
-    "W9IF-4 Torrey Pines Glider_temperature": {
-        "latitude": 32.89,
-        "longitude": -117.25,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "W9IF-4 Torrey Pines Glider_temperature"
-    },
-    "Torrey Pines_temperature": {
-        "latitude": 32.901,
-        "longitude": -117.25,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "Torrey Pines_temperature"
-    },
-    "N6NKF Del Mar_temperature": {
-        "latitude": 32.94533,
-        "longitude": -117.245,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "N6NKF Del Mar_temperature"
-    },
-    "K6SKM San Diego_temperature": {
-        "latitude": 32.84917,
-        "longitude": -117.20817,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "K6SKM San Diego_temperature"
-    },
-    "La Jolla_temperature": {
-        "latitude": 32.8667,
-        "longitude": -117.258,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "La Jolla_temperature"
-    },
-    "DW3101 Torrey Pines Reserve_temperature": {
-        "latitude": 32.92109,
-        "longitude": -117.25306,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "DW3101 Torrey Pines Reserve_temperature"
-    },
-    "KE6BZI San Diego_temperature": {
-        "latitude": 32.83577,
-        "longitude": -117.19907,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "KE6BZI San Diego_temperature"
-    },
-    "DW5079 San Diego_temperature": {
-        "latitude": 32.95517,
-        "longitude": -117.20617,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "DW5079 San Diego_temperature"
-    },
-    "Mount Soledad_temperature": {
-        "latitude": 32.814,
-        "longitude": -117.241,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "Mount Soledad_temperature"
-    },
-    "EW3170 La Jolla_temperature": {
-        "latitude": 32.87083,
-        "longitude": -117.25083,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "EW3170 La Jolla_temperature"
-    },
-    "EW3218 Del Mar_temperature": {
-        "latitude": 32.955,
-        "longitude": -117.259,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "EW3218 Del Mar_temperature"
-    },
-    "La Jolla Heights_temperature": {
-        "latitude": 32.84426,
-        "longitude": -117.23973,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "La Jolla Heights_temperature"
-    },
-    "FW0528 San Diego_temperature": {
-        "latitude": 32.8255,
-        "longitude": -117.19967,
-        "point_type": "temperature",
-        "unit": "DEG_F",
-        "name": "FW0528 San Diego_temperature"
     }
 }
