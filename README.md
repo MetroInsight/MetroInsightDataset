@@ -8,7 +8,7 @@ UPDATE: You cannot find data here to avoid privacy leak. Please contact Jason Ko
 ### Summary
 | Data Source   |# Data Points | Granularity | Etc.  |   
 |       ---     |     ---      |     ---     |  ---  |
-| BuildingDepot |              |    2 mins   | 5 buildings  |   
+| BuildingDepot |      7296    |    2 mins   | 5 buildings  |   
 |  ION Dataset  |      955     |    2 mins   |       |   
 | Google Traffic|      10      |   10 mins   | 5 routes     |   
 - Data Periods: 2017.1.18 ~ 2017.1.25
