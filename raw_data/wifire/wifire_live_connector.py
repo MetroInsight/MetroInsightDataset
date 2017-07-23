@@ -6,7 +6,11 @@ import gwd
 import pdb
 
 init_flag = True 
-interval =  30 * 24 * 60 * 60 # seconds
+interval =  5 * 60 # seconds
+
+wd_name = 'ucsd.metroinsight.wifire'
+gwd.auth(wd_name)
+gwd.kick(wd_name)
 
 with open('config/citadel_config.json', 'r') as fp:
     citadel_secret = json.load(fp)
@@ -158,4 +162,5 @@ while True:
                         }
                 data.append(datum)
         resp = requests.post(data_url, json={'data': data}, headers=headers)
+    gwd.kick(wd_name, 900)
     time.sleep(interval)
