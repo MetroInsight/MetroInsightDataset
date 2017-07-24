@@ -74,6 +74,5 @@ while True:
             pdb.set_trace()
         resp = requests.post(data_url, json={'data': data}, headers=headers)
         start_time = end_time
-    print('done')
     gwd.kick(wd_name, interval + 5*60)
     time.sleep(interval)
