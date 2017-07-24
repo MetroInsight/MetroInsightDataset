@@ -35,8 +35,10 @@ def find_points(query, headers=headers):
     return points
     
 def post_data(data, headers=headers):
-    resp = requests.post(data_url, json={'data': data}, headers=headers)
-    return resp.json()['success']
+    resp = requests.post(data_url, json={'data': data}, headers=headers).json()
+    if not resp['success']:
+        print(resp['reason'])
+    return resp['success']
 
 def get_data(query, headers=headers):
     resp = requests.get(data_url, json={'data': data}, headers=headers)
