@@ -17,6 +17,10 @@ data_url = citadel_host + '/data'
 point_url = citadel_host + '/point'
 dataquery_url = citadel_host + '/querydata'
 
+def get_metadata(uuid, headers=headers):
+    resp = requests.get(point_url + '/' + uuid, headers=headers)
+    return resp.json()['results']
+
 def create_point(point, headers=headers):
     resp = requests.post(point_url, json=point, headers=headers)
     if not resp.json()['success']:
@@ -39,8 +43,8 @@ def post_data(data, headers=headers):
     return resp.json()['success']
 
 def get_data(query, headers=headers):
-    resp = requests.get(data_url, json={'data': data}, headers=headers)
-    return resp.json()['success']
+    resp = requests.post(dataquery_url, json={'query': query}, headers=headers)
+    return resp.json()['results']
 
 def subset_dict(d, keys):
     return dict([(k, d[k]) for k in keys])
