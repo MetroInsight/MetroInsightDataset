@@ -265,7 +265,7 @@ def write_point(data_type, identifier, metadata_tags, value, timestamp):
     uuid = metadata_dict[name]['uuid']
     data_point = subset_dict(metadata_dict[name], ['geometryType', 'uuid', 'coordinates'])
     data_point['value'] = value
-    data_point['timestamp'] = timestamp
+    data_point['timestamp'] = timestamp * 1000
     return data_point
 
 

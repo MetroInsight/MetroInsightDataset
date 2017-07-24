@@ -147,7 +147,7 @@ while True:
                 uuid_dict[name] = create_point(point)
             value_list = feature['properties'][observable]
             time_list = feature['properties']['timestamp']
-            time_list = [arrow.get(t).timestamp for t in time_list]
+            time_list = [arrow.get(t).timestamp * 1000 for t in time_list]
 
             # Push Data
             for t, val in zip(time_list, value_list):
