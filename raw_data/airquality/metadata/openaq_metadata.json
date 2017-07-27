@@ -1,0 +1,184 @@
+{
+  "Del Mar - Mira Costa_San Diego-Carlsbad-San Marcos_AirNow_o3": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "Del Mar - Mira Costa_San Diego-Carlsbad-San Marcos_AirNow_o3", 
+    "coordinates": [
+      [
+        -117.264061, 
+        32.952087
+      ]
+    ], 
+    "location": "Del Mar - Mira Costa", 
+    "parameter": "o3", 
+    "unit": "ppm"
+  }, 
+  "Alpine_San Diego-Carlsbad-San Marcos_AirNow_pm25": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "Alpine_San Diego-Carlsbad-San Marcos_AirNow_pm25", 
+    "coordinates": [
+      [
+        -116.768326, 
+        32.842297
+      ]
+    ], 
+    "location": "Alpine", 
+    "parameter": "pm25", 
+    "unit": "microg_per_m3"
+  }, 
+  "Chula Vista_San Diego-Carlsbad-San Marcos_AirNow_o3": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "Chula Vista_San Diego-Carlsbad-San Marcos_AirNow_o3", 
+    "coordinates": [
+      [
+        -117.059074, 
+        32.631229
+      ]
+    ], 
+    "location": "Chula Vista", 
+    "parameter": "o3", 
+    "unit": "ppm"
+  }, 
+  "San Ysidro_San Diego-Carlsbad-San Marcos_AirNow_pm25": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "San Ysidro_San Diego-Carlsbad-San Marcos_AirNow_pm25", 
+    "coordinates": [
+      [
+        -117.030749, 
+        32.542679
+      ]
+    ], 
+    "location": "San Ysidro", 
+    "parameter": "pm25", 
+    "unit": "microg_per_m3"
+  }, 
+  "Otay Mesa - Donovan_San Diego-Carlsbad-San Marcos_AirNow_pm25": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "Otay Mesa - Donovan_San Diego-Carlsbad-San Marcos_AirNow_pm25", 
+    "coordinates": [
+      [
+        -116.929486, 
+        32.579361
+      ]
+    ], 
+    "location": "Otay Mesa - Donovan", 
+    "parameter": "pm25", 
+    "unit": "microg_per_m3"
+  }, 
+  "San Diego - Beardsle_San Diego-Carlsbad-San Marcos_AirNow_pm25": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "San Diego - Beardsle_San Diego-Carlsbad-San Marcos_AirNow_pm25", 
+    "coordinates": [
+      [
+        -117.149651, 
+        32.701492
+      ]
+    ], 
+    "location": "San Diego - Beardsle", 
+    "parameter": "pm25", 
+    "unit": "microg_per_m3"
+  }, 
+  "San Diego - Beardsle_San Diego-Carlsbad-San Marcos_AirNow_o3": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "San Diego - Beardsle_San Diego-Carlsbad-San Marcos_AirNow_o3", 
+    "coordinates": [
+      [
+        -117.149651, 
+        32.701492
+      ]
+    ], 
+    "location": "San Diego - Beardsle", 
+    "parameter": "o3", 
+    "unit": "ppm"
+  }, 
+  "Alpine_San Diego-Carlsbad-San Marcos_AirNow_o3": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "Alpine_San Diego-Carlsbad-San Marcos_AirNow_o3", 
+    "coordinates": [
+      [
+        -116.768326, 
+        32.842297
+      ]
+    ], 
+    "location": "Alpine", 
+    "parameter": "o3", 
+    "unit": "ppm"
+  }, 
+  "Camp Pendleton_San Diego-Carlsbad-San Marcos_AirNow_o3": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "Camp Pendleton_San Diego-Carlsbad-San Marcos_AirNow_o3", 
+    "coordinates": [
+      [
+        -117.396156, 
+        33.217026
+      ]
+    ], 
+    "location": "Camp Pendleton", 
+    "parameter": "o3", 
+    "unit": "ppm"
+  }, 
+  "El Cajon - Lexington_San Diego-Carlsbad-San Marcos_AirNow_pm25": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "El Cajon - Lexington_San Diego-Carlsbad-San Marcos_AirNow_pm25", 
+    "coordinates": [
+      [
+        -116.944222, 
+        32.789561
+      ]
+    ], 
+    "location": "El Cajon - Lexington", 
+    "parameter": "pm25", 
+    "unit": "microg_per_m3"
+  }, 
+  "Otay Mesa - Donovan_San Diego-Carlsbad-San Marcos_AirNow_o3": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "Otay Mesa - Donovan_San Diego-Carlsbad-San Marcos_AirNow_o3", 
+    "coordinates": [
+      [
+        -116.929486, 
+        32.579361
+      ]
+    ], 
+    "location": "Otay Mesa - Donovan", 
+    "parameter": "o3", 
+    "unit": "ppm"
+  }, 
+  "Camp Pendleton_San Diego-Carlsbad-San Marcos_AirNow_pm25": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "Camp Pendleton_San Diego-Carlsbad-San Marcos_AirNow_pm25", 
+    "coordinates": [
+      [
+        -117.396156, 
+        33.217026
+      ]
+    ], 
+    "location": "Camp Pendleton", 
+    "parameter": "pm25", 
+    "unit": "microg_per_m3"
+  }, 
+  "El Cajon - Lexington_San Diego-Carlsbad-San Marcos_AirNow_o3": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "El Cajon - Lexington_San Diego-Carlsbad-San Marcos_AirNow_o3", 
+    "coordinates": [
+      [
+        -116.944222, 
+        32.789561
+      ]
+    ], 
+    "location": "El Cajon - Lexington", 
+    "parameter": "o3", 
+    "unit": "ppm"
+  }, 
+  "El Cajon - FSD_San Diego-Carlsbad-San Marcos_AirNow_o3": {
+    "city": "San Diego-Carlsbad-San Marcos", 
+    "name": "El Cajon - FSD_San Diego-Carlsbad-San Marcos_AirNow_o3", 
+    "coordinates": [
+      [
+        -116.968133, 
+        32.817978
+      ]
+    ], 
+    "location": "El Cajon - FSD", 
+    "parameter": "o3", 
+    "unit": "ppm"
+  }
+}
