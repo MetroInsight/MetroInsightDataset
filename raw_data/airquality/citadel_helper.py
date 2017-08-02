@@ -3,9 +3,10 @@ import json
 import pdb
 import arrow
 
-with open('config/citadel_config.json', 'r') as fp:
-    citadel_config = json.load(fp)
-citadel_base_host = citadel_config['hostname']
+#with open('config/citadel_config.json', 'r') as fp:
+#    citadel_config = json.load(fp)
+#citadel_base_host = citadel_config['hostname']
+citadel_base_host = "http://florian.sdsc.edu:5445"
 citadel_host = citadel_base_host + '/api'
 
 headers = {
@@ -28,6 +29,7 @@ def create_point(point, headers=headers):
 def find_points(query, headers=headers):
     query = {'query': query}
     resp = requests.post(query_url, json=query, headers=headers)
+    pdb.set_trace()
     try:
         points = resp.json()['results']
     except:
@@ -39,8 +41,9 @@ def post_data(data, headers=headers):
     return resp.json()['success']
 
 def get_data(query, headers=headers):
-    resp = requests.get(data_url, json={'data': data}, headers=headers)
-    return resp.json()['success']
+    resp = requests.post(dataquery_url, json={'query': query}, headers=headers)
+    pdb.set_trace()
+    return resp.json()['results']
 
 def subset_dict(d, keys):
     return dict([(k, d[k]) for k in keys])
