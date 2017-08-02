@@ -15,7 +15,7 @@ from building_depot import DataService
 import ion_connector as client_lib
 
 init_flag = True 
-interval =  15 * 60 # seconds
+interval =  19 * 60 # seconds
 start_time = arrow.get().shift(seconds=-interval)
 
 wd_name = 'ucsd.metroinsight.ion'
@@ -77,14 +77,11 @@ while True:
         uuid = metadata['uuid']
         if not ts_data:
             print("No data, {0}".format(metadata['name']))
-            no_data_cnt += 1
             continue
         data = client_lib.normalize_data(uuid, ts_data, metadata)
         if not post_data(data):
             gwd.fault(wd_name, 'Failed at posting data of {0} to Citadel.'\
-                               .format(name))
+                               .format(metadata['name']))
     start_time = end_time
-    print('no data: ', no_data_cnt)
-    print('data: ', data_cnt)
     gwd.kick(wd_name, interval + 5*60)
     time.sleep(interval)
