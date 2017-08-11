@@ -1,0 +1,65 @@
+{
+    "bmsb":{
+      "url":"http://solar.ucsd.edu/demroes/BMSB_last_7.csv",
+      "location":{
+        "latitude": 32.87734779227495,
+        "longitude": -117.2361902431341
+      }
+    },
+    "cmrr":{
+      "url": "http://solar.ucsd.edu/demroes/CMRR_last_7.csv",
+      "location":{
+        "latitude": 32.88076535361635,
+        "longitude": -117.2353050710188
+      }
+    },
+    "ebu2":{
+      "url": "http://solar.ucsd.edu/demroes/EBU2_last_7.csv",
+      "location":{
+        "latitude": 32.88137099634495,
+        "longitude": -117.2329960529302
+      }
+    },
+    "hubb":{
+      "url": "http://solar.ucsd.edu/demroes/HUBB_last_7.csv",
+      "location":{
+        "latitude": 32.86733536884277,
+        "longitude": -117.2536692624115
+      }
+    },
+    "mocc":{
+      "url": "http://solar.ucsd.edu/demroes/MOCC_last_7.csv",
+      "location":{
+        "latitude": 32.87814768036719,
+        "longitude": -117.2225289023773
+      }
+    },
+    "mwfm":{
+      "url": "http://solar.ucsd.edu/demroes/MWFM_last_7.csv",
+      "location":{
+        "latitude": 32.87217324319315,
+        "longitude": -117.2408955806126
+      }
+    },
+    "posl":{
+      "url": "http://solar.ucsd.edu/demroes/POSL_last_7.csv",
+      "location":{
+        "latitude": 32.88095917488717,
+        "longitude": -117.2349812765901
+      }
+    },
+    "rimc":{
+      "url": "http://solar.ucsd.edu/demroes/RIMC_last_7.csv",
+      "location":{
+        "latitude": 32.88530993588294,
+        "longitude": -117.2401968129169
+      }
+    },
+    "tiog":{
+      "url": "http://solar.ucsd.edu/demroes/TIOG_last_7.csv",
+      "location":{
+        "latitude": 32.87908186777302,
+        "longitude": -117.2433552887329
+      }
+    }
+}
