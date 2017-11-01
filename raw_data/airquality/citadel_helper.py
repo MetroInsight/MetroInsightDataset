@@ -4,9 +4,10 @@ import pdb
 import arrow
 import re
 
-with open('config/citadel_config.json', 'r') as fp:
-    citadel_config = json.load(fp)
-citadel_base_host = citadel_config['hostname']
+#with open('config/citadel_config.json', 'r') as fp:
+#    citadel_config = json.load(fp)
+#citadel_base_host = citadel_config['hostname']
+citadel_base_host = "http://florian.sdsc.edu:5445"
 citadel_host = citadel_base_host + '/api'
 
 headers = {
@@ -33,6 +34,7 @@ def create_point(point, headers=headers):
 def find_points(query, headers=headers):
     query = {'query': query}
     resp = requests.post(query_url, json=query, headers=headers)
+    pdb.set_trace()
     try:
         res = resp.json()
         if res['success']:
