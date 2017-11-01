@@ -2,6 +2,7 @@ import requests
 import json
 import pdb
 import arrow
+import re
 
 with open('config/citadel_config.json', 'r') as fp:
     citadel_config = json.load(fp)
@@ -33,7 +34,11 @@ def find_points(query, headers=headers):
     query = {'query': query}
     resp = requests.post(query_url, json=query, headers=headers)
     try:
-        points = resp.json()['results']
+        res = resp.json()
+        if res['success']:
+            points = resp.json()['results']
+        else:
+            pdb.set_trace()
     except:
         pdb.set_trace()
     return points
@@ -48,5 +53,9 @@ def get_data(query, headers=headers):
 
 def subset_dict(d, keys):
     return dict([(k, d[k]) for k in keys])
+
+def custom_url_encode(s):
+    return re.sub('[^0-9a-zA-Z]', '_', s)
+
 
 date_format = 'YYYY-MM-DDTHH:mm:ss'
