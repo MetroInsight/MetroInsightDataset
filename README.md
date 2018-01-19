@@ -1,5 +1,8 @@
 This repository contains the dataset used to MetroInsight Project. It may be deprecated after stabilizing the webservice.
 
+## Dependencies
+Citadel python client library: https://github.com/MetroInsight/citadel-python-client.git
+
 # Datsets
 
 In each Dataset, you can find data in ./data and metadata in ./metadata.
