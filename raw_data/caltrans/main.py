@@ -12,29 +12,40 @@ import arrow  # For formatting the time format
 import pandas as pd  # For reading and interpreting the data
 
 from citadel_helper import *
+from citadel import Citadel
+#from Citadel.util import *
+
+# Init Citadel
+#with open('config/citadel_config.json', 'r') as fp:
+#    citadel_config = json.load(fp)
+#citadel = Citadel(citadel_config['hostname'])
 
 data_types = ["FLOW", "OCCUPANCY", "SPEED", "VMT", "VHT", "DELAY"] # Alter this and dict to modify data types used.
 uuid_dict = dict()
 raw_metadata_dict = {}
 metadata_dict = {}
 
-
+with open('config/citadel_config.json', 'r') as fp:
+    citadel_config = json.load(fp)
+citadel = Citadel(citadel_config['hostname'],
+                  citadel_config['apikey'])
 
 def make_name(vds_name, data_type):
     return vds_name + '_' + data_type
 
 def init_points(metadata_dict):
-    for name, metadata in metadata_dict.items():
+    for srcid, metadata in metadata_dict.items():
+        name = metadata['name']
         if metadata.get('uuid'):
             continue
-        points = find_points({'name': name})
+        points = citadel.query_points({'name': name})
         if not points:
             print(name, 'not found')
-            uuid = create_point(subset_dict(metadata, ['name', 'unit', 'pointType']))
+            uuid = citadel.create_point(subset_dict(metadata, ['name', 'unit', 'pointType']))
         else:
-            uuid = points[0]['uuid']
+            uuid = points[0]
         uuid_dict[name] = uuid
-        metadata_dict[name]['uuid'] = uuid
+        metadata_dict[srcid]['uuid'] = uuid
     with open('metadata/caltrans_metadata.json', 'w') as fp:
         json.dump(metadata_dict, fp, indent=2)
 
@@ -49,7 +60,6 @@ def main(argv):
 
     # Initiate watchdog
     wd_name = "ucsd.caltrans"
-    gwd.auth(wd_name)
 
     init_points(metadata_dict)
 
@@ -78,7 +88,8 @@ def main(argv):
 
     # Get data (flow and occupancy) from file and write to influxdb for all the IDs.
     error_flag = False
-    for ID in IDs:
+    for i, ID in enumerate(IDs):
+        print(i/len(IDs), ID)
         try:
             data = get_data(df, data_types, int(ID))
         except:
@@ -88,10 +99,16 @@ def main(argv):
         if data:  # Checks to see if any data was received
             write_influxdb(ID, data, data_types, iso_timestamp.timestamp)
         else:  # Watchdog
-            gwd.fault(wd_name, "No data found at {0}".format(ID))  # Notify that there is a fault
+            try:
+                gwd.fault(wd_name, "No data found at {0}".format(ID))  # Notify that there is a fault
+            except:
+                print(arrow.get(), "gwd not accessible")
             error_flag = True
     if not error_flag:  # Will run if error flag is false (positive). This means that data for all the IDs was found.
-        gwd.kick(wd_name, 600)  # Notify that this is running correctly. This signal is valid for 600 seconds.
+        try:
+            gwd.kick(wd_name, 600)  # Notify that this is running correctly. This signal is valid for 600 seconds.
+        except:
+            print(arrow.get(), "gwd not accessible")
 
 
 def init_metadata():
@@ -116,7 +133,14 @@ def init_metadata():
                 name = make_name(raw_metadata['name'], data_type)
                 try:
                     metadata = {
-                        'name': name,
+                        'name': name.replace(' ', '_')\
+                                    .replace('@', 'at')\
+                                    .replace('/', '_')\
+                                    .replace('&', 'and')\
+                                    .replace('(', '_')\
+                                    .replace(')', '_')\
+                                    .replace('?', '_')\
+                                    ,
                         'geometryType': 'point',
                         'coordinates': [[float(raw_metadata['longitude']),
                                          float(raw_metadata['latitude'])]],
@@ -188,9 +212,10 @@ def write_influxdb(VDS_ID, data, data_types, timestamp):
             citadel_data.append(data_point)
         else:  # Writes error if a value was not found for a specific VDS
             error_log("Could not retrieve data type %s's value for VDS %s. This is a common issue." % (data_type, VDS_ID))
-    if not post_data(citadel_data):
-        print('Failed at posting: {0}'.format(VDS_ID))
-        pdb.set_trace()
+    if citadel_data:
+        if not citadel.post_data(citadel_data):
+            print('Failed at posting: {0}'.format(VDS_ID))
+            pdb.set_trace()
 
 
 def get_metadata(identifier):

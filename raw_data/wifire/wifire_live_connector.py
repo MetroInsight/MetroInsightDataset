@@ -3,6 +3,7 @@ import requests
 import time
 import arrow
 import gwd
+import sys
 
 from citadel import Citadel
 from citadel.util import *
@@ -15,7 +16,8 @@ with open('config/citadel_config.json', 'r') as fp:
 #citadel_base_host = citadel_secret['hostname']
 #citadel_host = citadel_base_host + '/api'
 
-citadel = Citadel(citadel_config['hostname'])
+citadel = Citadel(citadel_config['hostname'],
+                  citadel_config['apikey'])
 
 with open('config/wifire_config.json', 'r') as fp:
     wifire_config = json.load(fp)
@@ -98,7 +100,11 @@ while True:
                 }
         data = requests.get(wifire_data_url, params=params)
         """
-        raw_data = requests.get(urlPlot).json()
+        try:
+            raw_data = requests.get(urlPlot).json()
+        except:
+            print('{0}: ERROR: {1}'.format(arrow.get(), sys.exc_info()[0]))
+            continue
         if not raw_data.get('features'):
             continue
         features = raw_data['features']
@@ -141,8 +147,14 @@ while True:
                         }
                 data.append(datum)
         if not citadel.post_data(data):
-            gwd.fault(wd_name, 'Failed at posting data of {0} to Citadel.'\
-                               .format(srcid))
+            try:
+                gwd.fault(wd_name, 'Failed at posting data of {0} to Citadel.'\
+                        .format(srcid))
+            except:
+                print(arrow.get(), "gwd not accessbile")
         begin_time = end_time
-    gwd.kick(wd_name, 900)
+    try:
+        gwd.kick(wd_name, 900)
+    except:
+        print(arrow.get(), "gwd not accessible")
     time.sleep(interval)

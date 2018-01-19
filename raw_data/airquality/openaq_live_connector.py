@@ -6,15 +6,17 @@ import gwd
 import pdb
 
 import get_openaq_data as client_lib 
-from citadel_helper import *
+from citadel import Citadel
 
 init_flag = True 
 interval =  10 * 60 # seconds
 start_time = arrow.get().shift(hours=-24)
 
-wd_name = 'ucsd.metroinsight.openaq'
-gwd.auth(wd_name)
-gwd.kick(wd_name)
+with open('config/citadel_config.json', 'r') as fp:
+    citadel_config = json.load(fp)
+
+citadel = Citadel(citadel_config['hostname'],
+                  citadel_config['apikey'])
 
 with open('config/openaq_config.json', 'r') as fp:
     src_config = json.load(fp)
@@ -25,6 +27,8 @@ with open('metadata/pointtype_map.json', 'r') as fp:
     pointtype_map = json.load(fp)
 with open('metadata/openaq_metadata.json', 'r') as fp:
     raw_metadata_dict = json.load(fp)
+
+wd_name = src_config['wd_name']
 
 
 ## src-specific configs
@@ -40,22 +44,24 @@ if init_flag:
         metadata = {
                 'pointType': pointtype_map[raw_metadata['parameter']],
                 'unit': raw_metadata['unit'],
-                'name': raw_metadata['name'],
+                'name': client_lib.custom_url_encode(raw_metadata['name']),
                 'geometryType': 'point',
                 'coordinates': raw_metadata['coordinates']
                 }
         metadata_dict[name] = metadata
-        points = find_points({'name': metadata['name']})
+        points = citadel.query_points({'name': metadata['name']})
         if points:
-            uuid = points[0]['uuid']
+            uuid = points[0]
         else:
             point = subset_dict(metadata, ['name', 'unit', 'pointType'])
-            uuid = create_point(point)
+            uuid = citadel.create_point(point)
         uuid_dict[name] = uuid
 
 while True:
+    valid_cnt = 0
+    invalid_cnt = 0
+    end_time = arrow.get()
     for name, metadata in metadata_dict.items():
-        end_time = arrow.get()
         raw_metadata = raw_metadata_dict[name]
         # Read Data
         params = {
@@ -63,16 +69,28 @@ while True:
                 'parameter': raw_metadata['parameter'],
                 'location': raw_metadata['location'],
                 }
-        results = client_lib.get_parameter_data(params, start_time, end_time)
+        try:
+            results = client_lib.get_parameter_data(params, start_time, end_time)
+        except Exception as e:
+            print('Did not get result: \n')
+            print(e)
+            continue
         uuid = uuid_dict[name]
         data = client_lib.normalize_data(uuid, results, metadata)
         if not results:
+            invalid_cnt += 1
             continue
-        if not post_data(data):
-            gwd.fault(wd_name, 'Failed at posting data of {0} to Citadel.'\
-                               .format(name))
+        if not citadel.post_data(data):
+            try:
+                gwd.fault(wd_name, 'Failed at posting data of {0} to Citadel.'\
+                        .format(name))
+            except:
+                print(arrow.get(), "gwd not accessible")
             pdb.set_trace()
-        resp = requests.post(data_url, json={'data': data}, headers=headers)
-        start_time = end_time
-    gwd.kick(wd_name, interval + 5*60)
+        valid_cnt += 1
+    start_time = end_time
+    try:
+        gwd.kick(wd_name, interval + 15*60)
+    except:
+        print(arrow.get(), "gwd not accessible")
     time.sleep(interval)
